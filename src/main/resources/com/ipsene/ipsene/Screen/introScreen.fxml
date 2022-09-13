@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ipsene.ipsene.SceneController">
+   <children>
+      <ImageView fitHeight="301.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/intro_screen/Cluedo_main.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#000000cc" height="100.0" layoutY="300.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Button fx:id="intro" layoutX="80.0" layoutY="328.0" mnemonicParsing="false" onAction="#switchToMainMenu" prefHeight="43.0" prefWidth="134.0" text="Play Game" textAlignment="CENTER">
+         <font>
+            <Font name="Snap ITC" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="404.0" layoutY="328.0" mnemonicParsing="false" onAction="#switchToExitGame" prefHeight="43.0" prefWidth="134.0" text="Exit" textAlignment="CENTER">
+         <font>
+            <Font name="Snap ITC" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

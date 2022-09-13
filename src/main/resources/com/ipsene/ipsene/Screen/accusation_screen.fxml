@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ipsene.ipsene.controller.AccusationController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/accusation/accusation.jpg" />
+         </image></ImageView>
+      <HBox alignment="TOP_CENTER" layoutX="33.0" layoutY="200.0" prefHeight="52.0" prefWidth="514.0">
+         <children>
+            <ChoiceBox fx:id="whoChoice" prefWidth="150.0" />
+            <Separator orientation="VERTICAL" prefHeight="100.0" prefWidth="32.0" />
+            <ChoiceBox fx:id="whatChoice" prefWidth="150.0" />
+            <Separator orientation="VERTICAL" prefHeight="100.0" prefWidth="47.0" />
+            <ChoiceBox fx:id="whereChoice" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <Button layoutX="386.0" layoutY="331.0" mnemonicParsing="false" onAction="#closeButtonAction" text="Cancel" />
+      <Button fx:id="accusationButton" layoutX="133.0" layoutY="331.0" mnemonicParsing="false" onAction="#accusationButton" text="Make accusation" />
+      <Label layoutX="86.0" layoutY="161.0" text="Who?" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="265.0" layoutY="161.0" text="What?" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="437.0" layoutY="161.0" text="Where?" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

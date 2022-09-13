@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ipsene.ipsene.SceneController">
+   <children>
+      <ImageView fitHeight="266.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/exit_game/exit_game.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#000000cc" height="158.0" layoutY="242.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Button layoutX="80.0" layoutY="299.0" mnemonicParsing="false" onAction="#endApplication" prefHeight="43.0" prefWidth="134.0" text="Yes" textAlignment="CENTER">
+         <font>
+            <Font name="Snap ITC" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="404.0" layoutY="299.0" mnemonicParsing="false" onAction="#switchToMainMenu" prefHeight="43.0" prefWidth="134.0" text="Cancel" textAlignment="CENTER">
+         <font>
+            <Font name="Snap ITC" size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

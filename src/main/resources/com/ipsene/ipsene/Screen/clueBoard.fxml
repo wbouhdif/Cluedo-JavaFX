@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ipsene.ipsene.controller.BoardController">
+   <children>
+      <GridPane fx:id="gridPane" layoutX="-1.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="872.0" style="-fx-background-color: opace;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="Professor_Plum" alignment="CENTER" prefHeight="246.0" prefWidth="222.0" text="Plum" textFill="#a602eb" GridPane.columnIndex="25" GridPane.rowIndex="22" />
+            <Label fx:id="kitchen" alignment="CENTER" opacity="0.5" prefHeight="56.0" prefWidth="227.0" style="-fx-background-color: red;" text="Kitchen" visible="false" GridPane.columnIndex="2" GridPane.columnSpan="5" GridPane.rowIndex="2" GridPane.rowSpan="4" />
+            <Label fx:id="abyss" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" />
+            <Label fx:id="ballroom" alignment="CENTER" opacity="0.5" prefHeight="56.0" prefWidth="227.0" style="-fx-background-color: red;" text="Ballroom" visible="false" GridPane.columnIndex="12" GridPane.columnSpan="5" GridPane.rowIndex="2" GridPane.rowSpan="6" />
+            <Label fx:id="conservatory" alignment="CENTER" opacity="0.5" prefHeight="56.0" prefWidth="227.0" style="-fx-background-color: red;" text="Conservatory" visible="false" GridPane.columnIndex="22" GridPane.columnSpan="5" GridPane.rowIndex="2" GridPane.rowSpan="4" />
+            <Label fx:id="abyss1" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="1" />
+            <Label fx:id="abyss2" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="2" />
+            <Label fx:id="abyss3" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="3" />
+            <Label fx:id="abyss4" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="4" />
+            <Label fx:id="abyss5" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="5" />
+            <Label fx:id="abyss6" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="6" />
+            <Label fx:id="abyss7" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="7" />
+            <Label fx:id="abyss8" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="8" />
+            <Label fx:id="abyss9" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="9" />
+            <Label fx:id="abyss10" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="10" />
+            <Label fx:id="abyss11" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="11" />
+            <Label fx:id="abyss12" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="12" />
+            <Label fx:id="abyss13" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="13" />
+            <Label fx:id="abyss14" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="14" />
+            <Label fx:id="abyss15" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="15" />
+            <Label fx:id="abyss16" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="16" />
+            <Label fx:id="abyss17" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="17" />
+            <Label fx:id="abyss18" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="18" />
+            <Label fx:id="abyss19" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="19" />
+            <Label fx:id="abyss20" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="20" />
+            <Label fx:id="abyss21" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="21" />
+            <Label fx:id="abyss22" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="22" />
+            <Label fx:id="abyss23" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="23" />
+            <Label fx:id="abyss24" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="24" />
+            <Label fx:id="abyss25" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="25" />
+            <Label fx:id="abyss26" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="26" />
+            <Label fx:id="abyss27" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" />
+            <Label fx:id="abyss28" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" />
+            <Label fx:id="abyss29" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="1" />
+            <Label fx:id="abyss30" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="2" />
+            <Label fx:id="abyss31" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="3" />
+            <Label fx:id="abyss32" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="4" />
+            <Label fx:id="abyss33" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="5" />
+            <Label fx:id="abyss34" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="6" />
+            <Label fx:id="abyss35" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="7" />
+            <Label fx:id="abyss36" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="8" />
+            <Label fx:id="abyss37" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="10" />
+            <Label fx:id="abyss38" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="11" />
+            <Label fx:id="abyss39" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="12" />
+            <Label fx:id="abyss40" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="13" />
+            <Label fx:id="abyss41" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="14" />
+            <Label fx:id="abyss42" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="22" />
+            <Label fx:id="abyss43" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="23" />
+            <Label fx:id="abyss44" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="24" />
+            <Label fx:id="abyss45" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="25" />
+            <Label fx:id="abyss46" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="26" />
+            <Label fx:id="abyss47" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="27" />
+            <Label fx:id="abyss48" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="28" />
+            <Label fx:id="abyss49" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="29" />
+            <Label fx:id="abyss50" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="30" />
+            <Label fx:id="abyss51" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="30" />
+            <Label fx:id="abyss52" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="26" GridPane.rowIndex="30" />
+            <Label fx:id="abyss53" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="25" GridPane.rowIndex="30" />
+            <Label fx:id="abyss54" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="24" GridPane.rowIndex="30" />
+            <Label fx:id="abyss55" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="23" GridPane.rowIndex="30" />
+            <Label fx:id="abyss56" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="22" GridPane.rowIndex="30" />
+            <Label fx:id="abyss57" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="21" GridPane.rowIndex="30" />
+            <Label fx:id="abyss58" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="20" GridPane.rowIndex="30" />
+            <Label fx:id="abyss59" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="19" GridPane.rowIndex="30" />
+            <Label fx:id="abyss60" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="18" GridPane.rowIndex="30" />
+            <Label fx:id="abyss61" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="17" GridPane.rowIndex="30" />
+            <Label fx:id="abyss62" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="16" GridPane.rowIndex="30" />
+            <Label fx:id="abyss63" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="15" GridPane.rowIndex="30" />
+            <Label fx:id="abyss64" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="14" GridPane.rowIndex="30" />
+            <Label fx:id="abyss65" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="13" GridPane.rowIndex="30" />
+            <Label fx:id="abyss66" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="12" GridPane.rowIndex="30" />
+            <Label fx:id="abyss67" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="11" GridPane.rowIndex="30" />
+            <Label fx:id="abyss68" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="10" GridPane.rowIndex="30" />
+            <Label fx:id="abyss69" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="9" GridPane.rowIndex="30" />
+            <Label fx:id="abyss70" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="8" GridPane.rowIndex="30" />
+            <Label fx:id="abyss71" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="7" GridPane.rowIndex="30" />
+            <Label fx:id="abyss72" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="6" GridPane.rowIndex="30" />
+            <Label fx:id="abyss73" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="5" GridPane.rowIndex="30" />
+            <Label fx:id="abyss74" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="4" GridPane.rowIndex="30" />
+            <Label fx:id="abyss75" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="3" GridPane.rowIndex="30" />
+            <Label fx:id="abyss76" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="30" />
+            <Label fx:id="abyss77" alignment="CENTER" prefHeight="61.0" prefWidth="67.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="30" />
+            <Label fx:id="abyss78" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="30" />
+            <Label fx:id="abyss79" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="29" />
+            <Label fx:id="abyss80" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="28" />
+            <Label fx:id="abyss81" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="27" />
+            <Label fx:id="abyss82" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="26" />
+            <Label fx:id="abyss83" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="25" />
+            <Label fx:id="abyss84" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="24" />
+            <Label fx:id="abyss85" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="23" />
+            <Label fx:id="abyss86" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="22" />
+            <Label fx:id="abyss87" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="14" />
+            <Label fx:id="abyss88" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="13" />
+            <Label fx:id="abyss89" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="12" />
+            <Label fx:id="abyss90" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="11" />
+            <Label fx:id="abyss91" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="10" />
+            <Label fx:id="abyss92" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="8" />
+            <Label fx:id="abyss93" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="7" />
+            <Label fx:id="abyss94" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="6" />
+            <Label fx:id="abyss95" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="5" />
+            <Label fx:id="abyss96" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="4" />
+            <Label fx:id="abyss97" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="3" />
+            <Label fx:id="abyss98" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="2" />
+            <Label fx:id="abyss99" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="1" />
+            <Label fx:id="abyss192" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <Label fx:id="abyss194" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+            <Label fx:id="abyss195" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+            <Label fx:id="abyss196" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label fx:id="abyss197" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label fx:id="abyss198" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+            <Label fx:id="abyss199" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Label fx:id="abyss200" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Label fx:id="abyss201" alignment="CENTER" prefHeight="36.0" prefWidth="208.0" style="-fx-background-color: black;" GridPane.columnIndex="21" GridPane.rowIndex="2" />
+            <Label fx:id="abyss203" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="21" GridPane.rowIndex="4" />
+            <Label fx:id="abyss204" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="21" GridPane.rowIndex="5" />
+            <Label fx:id="abyss205" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="21" GridPane.rowIndex="6" />
+            <Label fx:id="abyss206" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="23" GridPane.rowIndex="6" />
+            <Label fx:id="abyss207" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="24" GridPane.rowIndex="6" />
+            <Label fx:id="abyss208" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="25" GridPane.rowIndex="6" />
+            <Label fx:id="abyss209" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="26" GridPane.rowIndex="6" />
+            <Label fx:id="abyss210" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="11" GridPane.rowIndex="2" />
+            <Label fx:id="abyss211" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="11" GridPane.rowIndex="3" />
+            <Label fx:id="abyss212" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="11" GridPane.rowIndex="4" />
+            <Label fx:id="abyss213" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="11" GridPane.rowIndex="5" />
+            <Label fx:id="abyss214" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="11" GridPane.rowIndex="6" />
+            <Label fx:id="abyss215" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="11" GridPane.rowIndex="7" />
+            <Label fx:id="abyss216" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="11" GridPane.rowIndex="8" />
+            <Label fx:id="abyss218" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="13" GridPane.rowIndex="8" />
+            <Label fx:id="abyss219" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="15" GridPane.rowIndex="8" />
+            <Label fx:id="abyss220" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="14" GridPane.rowIndex="8" />
+            <Label fx:id="abyss221" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="17" GridPane.rowIndex="8" />
+            <Label fx:id="abyss222" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="17" GridPane.rowIndex="7" />
+            <Label fx:id="abyss223" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="17" GridPane.rowIndex="6" />
+            <Label fx:id="abyss224" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="17" GridPane.rowIndex="5" />
+            <Label fx:id="abyss225" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="17" GridPane.rowIndex="4" />
+            <Label fx:id="abyss226" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="17" GridPane.rowIndex="3" />
+            <Label fx:id="abyss227" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="17" GridPane.rowIndex="2" />
+            <Label fx:id="abyss100" alignment="CENTER" prefHeight="106.0" prefWidth="1470.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.columnSpan="27" GridPane.rowIndex="1" />
+            <Label fx:id="abyss101" alignment="CENTER" prefHeight="60.0" prefWidth="1306.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.columnSpan="27" GridPane.rowIndex="29" />
+            <Label fx:id="abyss103" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="abyss104" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="abyss105" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label fx:id="abyss106" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label fx:id="abyss107" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label fx:id="abyss108" alignment="CENTER" prefHeight="64.0" prefWidth="87.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <Label fx:id="abyss109" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <Label fx:id="abyss110" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+            <Label fx:id="abyss111" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <Label fx:id="abyss112" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            <Label fx:id="abyss113" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="22" />
+            <Label fx:id="abyss114" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="23" />
+            <Label fx:id="abyss115" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="24" />
+            <Label fx:id="abyss116" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="25" />
+            <Label fx:id="abyss117" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="26" />
+            <Label fx:id="abyss118" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="27" />
+            <Label fx:id="abyss119" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="28" />
+            <Label fx:id="abyss120" alignment="CENTER" prefHeight="36.0" prefWidth="227.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="2" />
+            <Label fx:id="abyss121" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="3" />
+            <Label fx:id="abyss122" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="4" />
+            <Label fx:id="abyss123" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="5" />
+            <Label fx:id="abyss124" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="6" />
+            <Label fx:id="abyss125" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="7" />
+            <Label fx:id="abyss126" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="8" />
+            <Label fx:id="abyss127" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="10" />
+            <Label fx:id="abyss128" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="11" />
+            <Label fx:id="abyss129" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="12" />
+            <Label fx:id="abyss130" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="13" />
+            <Label fx:id="abyss131" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="14" />
+            <Label fx:id="abyss132" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="22" />
+            <Label fx:id="abyss133" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="23" />
+            <Label fx:id="abyss134" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="24" />
+            <Label fx:id="abyss135" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="25" />
+            <Label fx:id="abyss136" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="26" />
+            <Label fx:id="abyss137" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="27" />
+            <Label fx:id="abyss138" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="28" />
+            <Label fx:id="enter_kitchen" alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" text="/|\" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <Label fx:id="enter_ballroom" alignment="CENTER" opacity="0.45" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" text="/|\" GridPane.columnIndex="16" GridPane.rowIndex="9" />
+            <Label fx:id="leave_kitchen" alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" text="&gt;" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Label fx:id="leave_ballroom" alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" text="\\|/" GridPane.columnIndex="12" GridPane.rowIndex="7" />
+            <Label fx:id="enter_conservatory" alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" text="/|\" GridPane.columnIndex="22" GridPane.rowIndex="7" />
+            <Label fx:id="leave_conservatory" alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" text="&lt;" GridPane.columnIndex="22" GridPane.rowIndex="3" />
+            <Label fx:id="lounge" alignment="CENTER" opacity="0.5" prefHeight="56.0" prefWidth="227.0" style="-fx-background-color: red;" text="Lounge" visible="false" GridPane.columnIndex="2" GridPane.columnSpan="5" GridPane.rowIndex="25" GridPane.rowSpan="3" />
+            <Label fx:id="abyss139" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="7" GridPane.rowIndex="28" />
+            <Label fx:id="abyss140" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="5" GridPane.rowIndex="24" />
+            <Label fx:id="abyss141" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="7" GridPane.rowIndex="26" />
+            <Label fx:id="abyss142" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="7" GridPane.rowIndex="25" />
+            <Label fx:id="abyss143" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="7" GridPane.rowIndex="24" />
+            <Label fx:id="abyss144" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="24" />
+            <Label fx:id="abyss145" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="3" GridPane.rowIndex="24" />
+            <Label fx:id="abyss146" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="4" GridPane.rowIndex="24" />
+            <Label fx:id="enter_lounge" alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" text="\\|/" GridPane.columnIndex="6" GridPane.rowIndex="23" />
+            <Label fx:id="leave_lounge" alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" text="&gt;" GridPane.columnIndex="6" GridPane.rowIndex="27" />
+            <Label fx:id="abyss148" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+            <Label fx:id="abyss149" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="20" />
+            <Label fx:id="abyss150" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+            <Label fx:id="abyss151" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="4" GridPane.rowIndex="10" />
+            <Label fx:id="abyss152" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="5" GridPane.rowIndex="10" />
+            <Label fx:id="abyss153" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="6" GridPane.rowIndex="10" />
+            <Label fx:id="abyss154" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="6" GridPane.rowIndex="11" />
+            <Label fx:id="abyss155" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="3" GridPane.rowIndex="20" />
+            <Label fx:id="abyss156" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="4" GridPane.rowIndex="20" />
+            <Label fx:id="abyss157" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="5" GridPane.rowIndex="20" />
+            <Label fx:id="abyss158" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="6" GridPane.rowIndex="14" />
+            <Label fx:id="abyss159" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="6" GridPane.rowIndex="13" />
+            <Label fx:id="diningRoom" alignment="CENTER" opacity="0.5" prefHeight="56.0" prefWidth="227.0" style="-fx-background-color: red;" text="Dining" visible="false" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="11" GridPane.rowSpan="9" />
+            <Label fx:id="enter_diningRoom" alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" text="&lt;" GridPane.columnIndex="7" GridPane.rowIndex="12" />
+            <Label fx:id="abyss160" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="11" GridPane.rowIndex="28" />
+            <Label fx:id="abyss161" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="11" GridPane.rowIndex="27" />
+            <Label fx:id="abyss162" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="11" GridPane.rowIndex="26" />
+            <Label fx:id="abyss163" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="11" GridPane.rowIndex="25" />
+            <Label fx:id="abyss164" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="11" GridPane.rowIndex="24" />
+            <Label fx:id="abyss165" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="11" GridPane.rowIndex="23" />
+            <Label fx:id="abyss166" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="17" GridPane.rowIndex="23" />
+            <Label fx:id="abyss167" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="17" GridPane.rowIndex="24" />
+            <Label fx:id="abyss168" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="17" GridPane.rowIndex="25" />
+            <Label fx:id="abyss169" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="17" GridPane.rowIndex="26" />
+            <Label fx:id="abyss170" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="17" GridPane.rowIndex="27" />
+            <Label fx:id="abyss171" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="17" GridPane.rowIndex="28" />
+            <Label fx:id="abyss172" alignment="CENTER" prefHeight="65.0" prefWidth="218.0" style="-fx-background-color: black;" GridPane.columnIndex="11" GridPane.rowIndex="22" />
+            <Label fx:id="hall" alignment="CENTER" opacity="0.5" prefHeight="56.0" prefWidth="227.0" style="-fx-background-color: red;" text="Hall" visible="false" GridPane.columnIndex="12" GridPane.columnSpan="5" GridPane.rowIndex="23" GridPane.rowSpan="6" />
+            <Label fx:id="enter_hall" alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" text="\\|/" GridPane.columnIndex="12" GridPane.rowIndex="21" />
+            <Label fx:id="leave_hall" alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" text="/|\" GridPane.columnIndex="16" GridPane.rowIndex="23" />
+            <Label fx:id="abyss174" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="26" GridPane.rowIndex="24" />
+            <Label fx:id="abyss175" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="25" GridPane.rowIndex="24" />
+            <Label fx:id="abyss176" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="24" GridPane.rowIndex="24" />
+            <Label fx:id="abyss177" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="23" GridPane.rowIndex="24" />
+            <Label fx:id="abyss178" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="21" GridPane.rowIndex="24" />
+            <Label fx:id="abyss179" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="21" GridPane.rowIndex="25" />
+            <Label fx:id="abyss180" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="21" GridPane.rowIndex="26" />
+            <Label fx:id="abyss182" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="21" GridPane.rowIndex="28" />
+            <Label fx:id="enter_study" alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" text="\\|/" GridPane.columnIndex="22" GridPane.rowIndex="23" />
+            <Label fx:id="leave_study" alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" text="&lt;" GridPane.columnIndex="22" GridPane.rowIndex="27" />
+            <Label fx:id="study" alignment="CENTER" opacity="0.5" prefHeight="56.0" prefWidth="227.0" style="-fx-background-color: red;" text="Study" visible="false" GridPane.columnIndex="22" GridPane.columnSpan="5" GridPane.rowIndex="25" GridPane.rowSpan="4" />
+            <Label fx:id="abyss183" alignment="CENTER" prefHeight="126.0" prefWidth="395.0" style="-fx-background-color: black;" GridPane.columnIndex="22" GridPane.columnSpan="5" GridPane.rowIndex="10" />
+            <Label fx:id="abyss184" alignment="CENTER" prefHeight="77.0" prefWidth="379.0" style="-fx-background-color: black;" GridPane.columnIndex="22" GridPane.columnSpan="5" GridPane.rowIndex="14" />
+            <Label fx:id="abyss185" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="22" GridPane.rowIndex="12" />
+            <Label fx:id="billiardRoom" alignment="CENTER" opacity="0.5" prefHeight="56.0" prefWidth="227.0" style="-fx-background-color: red;" text="Billiard Room" visible="false" GridPane.columnIndex="23" GridPane.columnSpan="4" GridPane.rowIndex="11" GridPane.rowSpan="3" />
+            <Label fx:id="abyss187" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="15" />
+            <Label fx:id="abyss188" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="15" />
+            <Label fx:id="abyss189" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="16" />
+            <Label fx:id="abyss190" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="16" />
+            <Label fx:id="abyss191" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="17" />
+            <Label fx:id="abyss228" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="18" />
+            <Label fx:id="abyss229" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="17" />
+            <Label fx:id="abyss230" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="18" />
+            <Label fx:id="abyss231" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="26" GridPane.rowIndex="16" />
+            <Label fx:id="abyss232" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="25" GridPane.rowIndex="16" />
+            <Label fx:id="abyss233" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="24" GridPane.rowIndex="16" />
+            <Label fx:id="abyss234" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="23" GridPane.rowIndex="16" />
+            <Label fx:id="abyss235" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="22" GridPane.rowIndex="16" />
+            <Label fx:id="abyss237" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="22" GridPane.rowIndex="18" />
+            <Label fx:id="abyss238" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="22" GridPane.rowIndex="20" />
+            <Label fx:id="abyss239" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="23" GridPane.rowIndex="20" />
+            <Label fx:id="abyss240" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="24" GridPane.rowIndex="20" />
+            <Label fx:id="abyss241" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="25" GridPane.rowIndex="20" />
+            <Label fx:id="abyss242" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="26" GridPane.rowIndex="20" />
+            <Label fx:id="abyss243" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="19" />
+            <Label fx:id="abyss244" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="19" />
+            <Label fx:id="abyss245" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="20" />
+            <Label fx:id="abyss246" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="20" />
+            <Label fx:id="abyss247" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnSpan="2" GridPane.rowIndex="16" />
+            <Label fx:id="abyss248" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnSpan="2" GridPane.rowIndex="15" />
+            <Label fx:id="abyss249" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnSpan="2" GridPane.rowIndex="17" />
+            <Label fx:id="abyss250" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnSpan="2" GridPane.rowIndex="18" />
+            <Label fx:id="abyss251" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnSpan="2" GridPane.rowIndex="19" />
+            <Label fx:id="abyss252" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnSpan="2" GridPane.rowIndex="20" />
+            <Label fx:id="abyss254" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="6" GridPane.rowIndex="17" />
+            <Label fx:id="abyss255" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="6" GridPane.rowIndex="16" />
+            <Label fx:id="abyss256" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="6" GridPane.rowIndex="15" />
+            <Label fx:id="abyss257" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="6" GridPane.rowIndex="20" />
+            <Label fx:id="abyss258" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="6" GridPane.rowIndex="19" />
+            <Label fx:id="library" alignment="CENTER" opacity="0.5" prefHeight="56.0" prefWidth="227.0" style="-fx-background-color: red;" text="Library" visible="false" GridPane.columnIndex="23" GridPane.columnSpan="4" GridPane.rowIndex="17" GridPane.rowSpan="3" />
+            <Label fx:id="enter_billiardRoom" alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" text="&gt;" GridPane.columnIndex="21" GridPane.rowIndex="11" />
+            <Label fx:id="leave_billiardRoom" alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" text="&lt;" GridPane.columnIndex="23" GridPane.rowIndex="13" />
+            <Label fx:id="enter_library" alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" text="&gt;" GridPane.columnIndex="21" GridPane.rowIndex="17" />
+            <Label fx:id="leave_library" alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" text="&lt;" GridPane.columnIndex="23" GridPane.rowIndex="19" />
+            <Label fx:id="leave_diningRoom" alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" text="&gt;" GridPane.columnIndex="5" GridPane.rowIndex="18" />
+            <Label fx:id="abyss102" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="abyss253" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Label alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="6" GridPane.rowIndex="12" />
+            <Label alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="6" GridPane.rowIndex="18" />
+            <Label alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="6" GridPane.rowIndex="24" />
+            <Label alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="12" GridPane.rowIndex="8" />
+            <Label alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="22" GridPane.rowIndex="6" />
+            <Label alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="22" GridPane.rowIndex="13" />
+            <Label alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="22" GridPane.rowIndex="19" />
+            <Label alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="22" GridPane.rowIndex="24" />
+            <Label alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="16" GridPane.rowIndex="22" />
+            <Label fx:id="startingPositionBlue" alignment="CENTER" opacity="0.3" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: purple;" GridPane.columnIndex="25" GridPane.rowIndex="22" />
+            <Label alignment="CENTER" prefHeight="33.0" prefWidth="75.0" style="-fx-background-color: black;" text="Kitchen" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="3" GridPane.columnSpan="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Snap ITC" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="77.0" style="-fx-background-color: black;" text="Ballroom" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="13" GridPane.columnSpan="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Snap ITC" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" style="-fx-background-color: black;" text="Conservatory" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="23" GridPane.columnSpan="5" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Snap ITC" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="109.0" style="-fx-background-color: black;" text="Billiard room" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="23" GridPane.columnSpan="4" GridPane.rowIndex="10">
+               <font>
+                  <Font name="Snap ITC" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="71.0" style="-fx-background-color: black;" text="Library" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="24" GridPane.columnSpan="2" GridPane.rowIndex="16">
+               <font>
+                  <Font name="Snap ITC" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="102.0" style="-fx-background-color: black;" text="Study" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="23" GridPane.columnSpan="3" GridPane.rowIndex="24">
+               <font>
+                  <Font name="Snap ITC" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="102.0" style="-fx-background-color: black;" text="Hall" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="13" GridPane.columnSpan="3" GridPane.rowIndex="29">
+               <font>
+                  <Font name="Snap ITC" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="102.0" style="-fx-background-color: black;" text="Lounge" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="3" GridPane.columnSpan="3" GridPane.rowIndex="29">
+               <font>
+                  <Font name="Snap ITC" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="106.0" style="-fx-background-color: black;" text="Dining Room" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.columnSpan="5" GridPane.rowIndex="10">
+               <font>
+                  <Font name="Snap ITC" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="Mrs_Peacock" alignment="CENTER" prefHeight="246.0" prefWidth="222.0" text="Peacock" textFill="#0224ed" GridPane.columnIndex="24" GridPane.rowIndex="8">
+               <font>
+                  <Font size="8.0" />
+               </font></Label>
+            <Label fx:id="startingPositionBlue1" alignment="CENTER" opacity="0.3" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: blue;" GridPane.columnIndex="24" GridPane.rowIndex="8" />
+            <Label fx:id="startingPositionBlue11" alignment="CENTER" opacity="0.3" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: green;" GridPane.columnIndex="19" GridPane.rowIndex="3" />
+            <Label fx:id="startingPositionBlue111" alignment="CENTER" opacity="0.3" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: white;" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+            <Label fx:id="startingPositionBlue1111" alignment="CENTER" opacity="0.3" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: yellow;" GridPane.columnIndex="3" GridPane.rowIndex="22" />
+            <Label fx:id="startingPositionBlue11111" alignment="CENTER" opacity="0.3" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: red;" GridPane.columnIndex="9" GridPane.rowIndex="27" />
+            <Label fx:id="Mr_Green" alignment="CENTER" prefHeight="246.0" prefWidth="222.0" text="Green" textFill="#3bff6f" GridPane.columnIndex="19" GridPane.rowIndex="3">
+               <font>
+                  <Font size="11.0" />
+               </font></Label>
+            <Label fx:id="Mrs_White" alignment="CENTER" prefHeight="246.0" prefWidth="222.0" text="White" textFill="WHITE" GridPane.columnIndex="9" GridPane.rowIndex="3">
+               <font>
+                  <Font size="11.0" />
+               </font></Label>
+            <Label fx:id="Colonel_Mustard" alignment="CENTER" prefHeight="246.0" prefWidth="222.0" text="Mustard" textFill="#e6fb2e" GridPane.columnIndex="3" GridPane.rowIndex="22">
+               <font>
+                  <Font size="8.0" />
+               </font></Label>
+            <Label fx:id="Ms_Scarlet" alignment="CENTER" prefHeight="246.0" prefWidth="222.0" text="Scarlet" textFill="#eb0202" GridPane.columnIndex="9" GridPane.rowIndex="27">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label fx:id="abyss259" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="9" />
+            <Label fx:id="abyss260" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="9" />
+            <Label fx:id="abyss261" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="9" />
+            <Label fx:id="abyss262" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label fx:id="abyss991" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.rowIndex="21" />
+            <Label fx:id="abyss992" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="21" />
+            <Label fx:id="abyss993" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="27" GridPane.rowIndex="21" />
+            <Label fx:id="abyss994" alignment="CENTER" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="28" GridPane.rowIndex="21" />
+            <Label alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="7" GridPane.rowIndex="27" />
+            <Label alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="16" GridPane.rowIndex="8" />
+            <Label alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="21" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="21" GridPane.rowIndex="27" />
+            <Label alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="22" GridPane.rowIndex="17" />
+            <Label alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="22" GridPane.rowIndex="11" />
+            <Label fx:id="abyss1721" alignment="CENTER" prefHeight="65.0" prefWidth="218.0" style="-fx-background-color: black;" GridPane.columnIndex="13" GridPane.rowIndex="22" />
+            <Label alignment="CENTER" opacity="0.5" prefHeight="103.0" prefWidth="98.0" style="-fx-background-color: black;" GridPane.columnIndex="12" GridPane.rowIndex="22" />
+            <Label fx:id="abyss17211" alignment="CENTER" prefHeight="65.0" prefWidth="218.0" style="-fx-background-color: black;" GridPane.columnIndex="14" GridPane.rowIndex="22" />
+            <Label fx:id="abyss17212" alignment="CENTER" prefHeight="65.0" prefWidth="218.0" style="-fx-background-color: black;" GridPane.columnIndex="15" GridPane.rowIndex="22" />
+            <Label fx:id="abyss17213" alignment="CENTER" prefHeight="65.0" prefWidth="218.0" style="-fx-background-color: black;" GridPane.columnIndex="17" GridPane.rowIndex="22" />
+         </children>
+      </GridPane>
+      <Button fx:id="gridButtonUp" layoutX="1420.0" layoutY="649.0" mnemonicParsing="false" onAction="#updatePlayerUp" prefHeight="64.0" prefWidth="61.0" style="-fx-background-color: black;" text="/|\" textFill="WHITE" />
+      <Button fx:id="gridButtonRight" layoutX="1481.0" layoutY="713.0" mnemonicParsing="false" onAction="#updatePlayerRight" prefHeight="64.0" prefWidth="61.0" style="-fx-background-color: black;" text="-&gt;" textFill="WHITE" />
+      <Button fx:id="gridButtonDown" layoutX="1420.0" layoutY="713.0" mnemonicParsing="false" onAction="#updatePlayerDown" prefHeight="64.0" prefWidth="61.0" style="-fx-background-color: black;" text="\\|/" textFill="WHITE" />
+      <Button fx:id="gridButtonLeft" layoutX="1358.0" layoutY="713.0" mnemonicParsing="false" onAction="#updatePlayerLeft" prefHeight="64.0" prefWidth="61.0" style="-fx-background-color: black;" text="&lt;-" textFill="WHITE" />
+      <Button fx:id="suggestionButton" alignment="CENTER" layoutX="1387.0" layoutY="24.0" mnemonicParsing="false" onAction="#suggestion" prefHeight="31.0" prefWidth="123.0" style="-fx-background-color: black;" text="Suggestion" textFill="WHITE">
+         <font>
+            <Font name="Snap ITC" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="accusationButton" alignment="CENTER" layoutX="1387.0" layoutY="66.0" mnemonicParsing="false" onAction="#accusation" prefHeight="31.0" prefWidth="123.0" style="-fx-background-color: black;" text="Accusation" textFill="WHITE">
+         <font>
+            <Font name="Snap ITC" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="showSteps" alignment="CENTER" layoutX="1387.0" layoutY="573.0" prefHeight="56.0" prefWidth="123.0" style="-fx-background-color: black;" text="0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Snap ITC" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="endTurn" alignment="CENTER" layoutX="1388.0" layoutY="106.0" mnemonicParsing="false" onAction="#switchPlayer" prefHeight="31.0" prefWidth="123.0" style="-fx-background-color: black;" text="End turn" textFill="WHITE">
+         <font>
+            <Font name="Snap ITC" size="15.0" />
+         </font>
+      </Button>
+      <BorderPane fx:id="rollDicePane" layoutX="265.0" layoutY="303.0" prefHeight="186.0" prefWidth="347.0" style="-fx-background-color: black;">
+         <left>
+            <ImageView fx:id="diceImg" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../Images/Dice/dice1.png" />
+               </image>
+            </ImageView>
+         </left>
+         <right>
+            <ImageView fx:id="diceImg2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../Images/Dice/dice1.png" />
+               </image>
+            </ImageView>
+         </right>
+         <center>
+            <Button fx:id="rollButton" mnemonicParsing="false" onAction="#roll" prefHeight="27.0" prefWidth="49.0" snapToPixel="false" style="-fx-background-color: BLACK; -fx-border-color: white;" text="Roll" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Snap ITC" size="12.0" />
+               </font>
+            </Button>
+         </center>
+         <top>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="It's your turn to Roll!" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Snap ITC" size="15.0" />
+               </font>
+            </Text>
+         </top>
+      </BorderPane>
+      <Pane fx:id="notebookPane" layoutX="899.0" layoutY="11.0" prefHeight="766.0" prefWidth="375.0" style="-fx-border-color: black; -fx-background-color: grey;">
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="24.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your personal notebook" textAlignment="CENTER" wrappingWidth="326.7753105163574">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="-13.0" layoutY="245.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="WEAPONS" textAlignment="CENTER" wrappingWidth="375.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="-13.0" layoutY="75.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="SUSPECTS" textAlignment="CENTER" wrappingWidth="375.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.6450381823850952">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.2780337941628265">
+                           <color>
+                              <Color red="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Text fill="RED" layoutX="-6.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ROOMS" textAlignment="CENTER" wrappingWidth="339.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="#0026ff" fontSmoothingType="LCD" layoutX="13.0" layoutY="35.0" stroke="#0022ff" strokeType="OUTSIDE" strokeWidth="0.0" text="The cards you own are already selected for you and highlighted in blue!" underline="true">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <CheckBox layoutX="118.0" layoutY="80.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="200.0" stylesheets="@../checkbox.css" text="Miss Scarlet" textAlignment="RIGHT">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Snap ITC" size="11.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="118.0" layoutY="105.0" mnemonicParsing="false" stylesheets="@../checkbox.css" text="Mrs. White" textAlignment="RIGHT">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Snap ITC" size="11.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="118.0" layoutY="130.0" mnemonicParsing="false" stylesheets="@../checkbox.css" text="Professor Plum" textAlignment="RIGHT">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Snap ITC" size="11.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="118.0" layoutY="155.0" mnemonicParsing="false" stylesheets="@../checkbox.css" text="Colonel Mustard" textAlignment="RIGHT">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Snap ITC" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </CheckBox>
+            <CheckBox layoutX="118.0" layoutY="180.0" mnemonicParsing="false" stylesheets="@../checkbox.css" text="Mr. Green" textAlignment="RIGHT">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Snap ITC" size="11.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="118.0" layoutY="205.0" mnemonicParsing="false" stylesheets="@../checkbox.css" text="Mrs. Peacock" textAlignment="RIGHT">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Snap ITC" size="11.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="118.0" layoutY="252.0" mnemonicParsing="false" stylesheets="@../checkbox.css" text="Dagger" textAlignment="RIGHT">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Snap ITC" size="11.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="118.0" layoutY="277.0" mnemonicParsing="false" text="Rope" textAlignment="RIGHT">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Snap ITC" size="11.0" />
+               </font>
+               <stylesheets>
+                  <URL value="@../checkbox.css" />
+                  <URL value="@../checkbox.css" />
+               </stylesheets>
+            </CheckBox>
+            <CheckBox layoutX="118.0" layoutY="302.0" mnemonicParsing="false" stylesheets="@../checkbox.css" text="Revolver" textAlignment="RIGHT">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Snap ITC" size="11.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="118.0" layoutY="327.0" mnemonicParsing="false" stylesheets="@../checkbox.css" text="Wrench" textAlignment="RIGHT">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Snap ITC" size="11.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="118.0" layoutY="352.0" mnemonicParsing="false" stylesheets="@../checkbox.css" text="Lead pipe" textAlignment="RIGHT">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Snap ITC" size="11.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="118.0" layoutY="377.0" mnemonicParsing="false" stylesheets="@../checkbox.css" text="Candlestick" textAlignment="RIGHT">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Snap ITC" size="11.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="test" layoutX="118.0" layoutY="424.0" mnemonicParsing="false" stylesheets="@../checkbox.css" text="Hall" textAlignment="RIGHT">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Snap ITC" size="11.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="118.0" layoutY="449.0" mnemonicParsing="false" stylesheets="@../checkbox.css" text="Lounge" textAlignment="RIGHT">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Snap ITC" size="11.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="118.0" layoutY="474.0" mnemonicParsing="false" stylesheets="@../checkbox.css" text="Dining room" textAlignment="RIGHT">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Snap ITC" size="11.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="118.0" layoutY="499.0" mnemonicParsing="false" stylesheets="@../checkbox.css" text="Kitchen" textAlignment="RIGHT">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Snap ITC" size="11.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="118.0" layoutY="624.0" mnemonicParsing="false" stylesheets="@../checkbox.css" text="Library" textAlignment="RIGHT">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Snap ITC" size="11.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="118.0" layoutY="524.0" mnemonicParsing="false" stylesheets="@../checkbox.css" text="Ballroom" textAlignment="RIGHT">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Snap ITC" size="11.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="118.0" layoutY="549.0" mnemonicParsing="false" stylesheets="@../checkbox.css" text="Conservatory" textAlignment="RIGHT">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Snap ITC" size="11.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="118.0" layoutY="574.0" mnemonicParsing="false" stylesheets="@../checkbox.css" text="Billiard room" textAlignment="RIGHT">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Snap ITC" size="11.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="118.0" layoutY="599.0" mnemonicParsing="false" stylesheets="@../checkbox.css" text="Study" textAlignment="RIGHT">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="Snap ITC" size="11.0" />
+               </font>
+            </CheckBox>
+            <Text fill="RED" layoutX="71.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The cards you get through suggestion will be red." underline="true">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <VBox layoutX="1287.0" layoutY="147.0" prefHeight="414.0" prefWidth="302.0">
+         <children>
+            <ListView fx:id="logListView" prefHeight="423.0" prefWidth="302.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

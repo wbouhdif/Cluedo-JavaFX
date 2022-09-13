@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ipsene.ipsene.controller.JoinLobbyController">
+    <children>
+        <ImageView fitHeight="400.0" fitWidth="618.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/lobby_screens/bloodybg.jpg" />
+            </image>
+        </ImageView>
+        <TextField fx:id="lobbyName" layoutX="225.0" layoutY="123.0" promptText="Enter:" />
+        <Button fx:id="joinLobbyButton" layoutX="258.0" layoutY="200.0" mnemonicParsing="false" onAction="#joinLobby" text="Join Lobby" />
+    </children>
+</AnchorPane>

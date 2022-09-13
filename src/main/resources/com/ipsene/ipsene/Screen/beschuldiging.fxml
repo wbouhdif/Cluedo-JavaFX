@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="suggestionPane" prefHeight="375.0" prefWidth="484.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ipsene.ipsene.controller.SuggestionController">
+    <children>
+        <ImageView fitHeight="403.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/Board/back.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="next" disable="true" layoutX="519.0" layoutY="325.0" mnemonicParsing="false" onAction="#weaponSuggestionScreen" prefHeight="27.0" prefWidth="67.0" style="-fx-background-color: white; -fx-border-color: black;" text="Next">
+         <font>
+            <Font name="Snap ITC" size="12.0" />
+         </font></Button>
+        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="23.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suggest a murder commited in the room">
+            <font>
+                <Font name="Snap ITC" size="15.0" />
+            </font>
+        </Text>
+      <RadioButton fx:id="suspectButton6" layoutX="418.0" layoutY="227.0" mnemonicParsing="false" text="Mrs. Peacock" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="Susp" />
+         </toggleGroup>
+         <font>
+            <Font name="Snap ITC" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="suspectButton2" layoutX="418.0" layoutY="143.0" mnemonicParsing="false" text="Mrs. White" textFill="WHITE" toggleGroup="$Susp">
+         <font>
+            <Font name="Snap ITC" size="12.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="suspectButton1" layoutX="230.0" layoutY="228.0" mnemonicParsing="false" text="Miss Scarlet" textFill="WHITE" toggleGroup="$Susp">
+         <font>
+            <Font name="Snap ITC" size="12.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="suspectButton4" layoutX="230.0" layoutY="143.0" mnemonicParsing="false" text="Colonel Mustard" textFill="WHITE" toggleGroup="$Susp">
+         <font>
+            <Font name="Snap ITC" size="12.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="suspectButton5" layoutX="42.0" layoutY="143.0" mnemonicParsing="false" text="Mr. Green" textFill="WHITE" toggleGroup="$Susp">
+         <font>
+            <Font name="Snap ITC" size="12.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="suspectButton3" layoutX="42.0" layoutY="227.0" mnemonicParsing="false" text="Professor Plum" textFill="WHITE" toggleGroup="$Susp">
+         <font>
+            <Font name="Snap ITC" size="12.0" />
+         </font></RadioButton>
+      <Button fx:id="aproveBtn" layoutX="249.0" layoutY="325.0" mnemonicParsing="false" onAction="#suggestSuspect" prefHeight="27.0" prefWidth="84.0" style="-fx-background-color: white; -fx-border-color: black;" text="Approve ">
+         <font>
+            <Font name="Snap ITC" size="12.0" />
+         </font></Button>
+      <Label fx:id="suspectLabel" layoutX="192.0" layoutY="62.0" style="-fx-border-color: black;" text="Select a suspect" textFill="WHITE">
+         <font>
+            <Font name="Snap ITC" size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

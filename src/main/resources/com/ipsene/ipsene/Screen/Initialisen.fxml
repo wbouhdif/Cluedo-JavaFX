@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="423.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ipsene.ipsene.controller.InitialiseController">
+    <children>
+        <ImageView fitHeight="478.0" fitWidth="714.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/Board/back.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="rollButton" layoutX="497.0" layoutY="311.0" mnemonicParsing="true" onAction="#initialiseRoll" prefHeight="42.0" prefWidth="116.0" text="Roll">
+            <font>
+                <Font name="Snap ITC" size="14.0" />
+            </font></Button>
+        <ImageView fitHeight="207.0" fitWidth="211.0" layoutX="101.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/Icon/Cluedo.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="diceImg" fitHeight="168.0" fitWidth="171.0" layoutX="471.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/Dice/dice6.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="diceLabel" layoutX="232.0" layoutY="43.0" text="Roll the dice to get the red player" textFill="WHITE">
+            <font>
+                <Font name="Snap ITC" size="13.0" />
+            </font>
+        </Label>
+        <Button fx:id="next" disable="true" layoutX="302.0" layoutY="363.0" mnemonicParsing="true" onAction="#initialiseToMain" prefHeight="42.0" prefWidth="116.0" text="Next">
+            <font>
+                <Font name="Snap ITC" size="14.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
